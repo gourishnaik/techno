@@ -1,0 +1,40 @@
+.u {
+    color:black;
+    text-decoration:underline  blue
+    
+  }
+  .abc{
+    color: gray;
+    font-weight: 200;
+    font-style: bold;
+  }
+  .abcd{
+    color: gray;
+  }
+  .xyz{
+    border-radius: 40%;
+    margin-left: 40%;
+    border-color:cornflowerblue;
+    width: 8%;
+    color:  cornflowerblue;
+  }
+  .mat-icon {
+    width: 26px !important;
+    height: 16px !important;
+    line-height: 16px !important;
+ }
+ .material-icons {
+  font-size: 26px !important;
+}
+
+.z{
+  margin: 10px;
+  color:black;
+}
+.search-icon{
+  position: absolute;
+  z-index: 20;
+  color: blue;
+  right: 1%;
+  top:15px;
+}

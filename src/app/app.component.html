@@ -1,0 +1,159 @@
+<br><br><br>
+
+<!---                          
+<nav class="navbar navbar-light bg-light ">
+<div class="container pt-6">
+<div class="form-group w-100 h-50 ">
+  <div class="input-group">
+  <input type="text" style="height:48px" class="form-control" id="example3" placeholder="search for job">
+  <span class="input-group-btn">
+    <button class="btn btn-default" type="button">Go!</button>
+  </span>
+</div>
+<br>
+
+</div>
+
+</div>
+</nav>
+-->
+
+
+<nav class="navbar navbar-light bg-light ">
+  <div class="container pt-3">
+    <div class="form-group"></div>
+<mat-form-field  class="example-full-width"[style.width.px]=1300 appearance="outline">
+  <input matInput [(ngModel)]="searchterm"(keyup)="search($event)" placeholder="search for job" >
+  <span class="fas fa-search search-icon"></span>
+  </mat-form-field>
+</div>
+<br>
+
+  
+<div class="container ">
+<mat-form-field [style.width.px]=300 appearance="outline">
+  <mat-label>Department</mat-label>
+  <mat-select [formControl]="animalControl" >
+     <mat-option *ngFor="let animal of animals| filter:searchkey:'title' "  >
+      {{animal.name}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field [style.width.px]=400 appearance="outline">
+  <mat-label>Location</mat-label>
+  <mat-select [formControl]="animalControl" >
+     <mat-option *ngFor="let animal of mamals| filter:searchkey:'title'"  [value]="mamals">
+      {{animal.name}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field [style.width.px]=400 appearance="outline">
+  <mat-label>Function</mat-label>
+  <mat-select [formControl]="animalControl" >
+     <mat-option *ngFor="let animal of submamls | filter:searchkey:'title'" [value]="animal">
+      {{animal.name}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+<br>
+
+ <!---   <ng-container *ngFor="let item of submamls | filter:searchkey:'title' "> ---> 
+<!--quality assurance-->
+  
+<strong class="u" style="font-size: 27px "> Quality Assurance</strong>
+<hr>
+<br>
+<br>
+<div class="container">
+  <br>
+<strong style="font-size: 17px ">Quality Assurance Analyst</strong>
+
+  <br>
+  </div>
+
+  <div class="container pt-3">
+    
+<mat-icon class="abcd" aria-label="Example home icon">assessment</mat-icon> &nbsp;&nbsp;
+<strong class="abc" style="font-size: 15px " >Quality Assurance</strong>&nbsp;&nbsp;
+
+
+<mat-icon class="abcd" aria-label="Example home icon">gps_fixed</mat-icon> &nbsp;&nbsp;
+<strong class="abc"  style="font-size: 15px " >Verna ,Goa</strong>  &nbsp;&nbsp;
+
+<button class="abcd"mat-raised-button>FULL TIME</button>
+<a href="https://demo.jobsoid.com/Apply/1055" target="_blank" button class="xyz" mat-stroked-button color="primary">Apply </a>  
+<button class="z"mat-raised-button>view</button>
+
+</div>
+
+<!--quality assurance lead-->
+
+
+<hr>
+<br>
+<br>
+<div class="container">
+  <br>
+<strong style="font-size: 17px ">Quality Assurance Lead</strong>
+
+  <br>
+  </div>
+
+  <div class="container pt-3">
+<mat-icon class="abcd" aria-label="Example home icon">assessment</mat-icon> &nbsp;&nbsp;
+<strong class="abc" style="font-size: 15px " >Quality Assurance</strong>&nbsp;&nbsp;
+
+
+<mat-icon class="abcd" aria-label="Example home icon">gps_fixed</mat-icon> &nbsp;&nbsp;
+<strong class="abc"style="font-size: 15px " >Verna ,Goa</strong>  &nbsp;&nbsp;
+
+<button class="abcd"mat-raised-button>FULL TIME</button>
+<a href="https://demo.jobsoid.com/Apply/1055" target="_blank" button class="xyz" mat-stroked-button color="primary">Apply </a>  
+<button class="z"mat-raised-button>view</button>
+
+</div>
+
+<!---Project manager-->
+
+<strong class="u" style="font-size: 27px "> Project Manager</strong>
+<hr>
+<br>
+<br>
+<div class="container">
+  <br>
+<strong style="font-size: 17px ">Business Analyst</strong>
+
+  <br>
+  </div>
+
+  <div class="container pt-3">
+<mat-icon class="abcd" aria-label="Example home icon">assessment</mat-icon>&nbsp;
+<strong class="abc" style="font-size: 15px " >Project Management</strong>
+
+
+<mat-icon class="abcd" aria-label="Example home icon">gps_fixed</mat-icon> &nbsp;
+<strong class="abc"style="font-size: 15px " >Verna ,Goa</strong>  &nbsp;&nbsp;
+
+<button class="abcd"mat-raised-button>FULL TIME</button>
+<a href="https://demo.jobsoid.com/Apply/1055" target="_blank" button class="xyz" mat-stroked-button color="primary">Apply </a>  
+<button class="z"mat-raised-button>view</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+  <!-- </ng-container>     --> 
+
+</div>
+
+
+</nav>
+
